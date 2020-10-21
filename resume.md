@@ -25,39 +25,29 @@ The University Highschool <span style="float: right; ">2014-2016</span>
 
 ### EXPERIENCE
 
-Title - **Comapany** <span style="float: right; ">Duration</span>  
-_Description Phasellus a tellus volutpat, ornare sapien et, lacinia erat. Suspendisse congue, enim vitae mattis pulvinar, eros lacus porttitor neque, eu sodales nibh metus nec arcu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;_  
-Technologies used  
+Summer Vacationer - **Deloitte** <span style="float: right; ">Nov 2020 - Dec 2020</span>  
+Platform Engineering 
 
  
-Title - **Comapany** <span style="float: right; ">Duration</span>  
-_Description Phasellus a tellus volutpat, ornare sapien et, lacinia erat. Suspendisse congue, enim vitae mattis pulvinar, eros lacus porttitor neque, eu sodales nibh metus nec arcu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;_  
-Technologies used  
+Technical Trainee - **Telstra** <span style="float: right; ">Jan 2020 - March 2020</span>  
+UC Voice Engineering
+Working alongside Software Engineers to design, develop and deploy solutions for Telstra customers. This involved testing and writing code in Java while practising Agile ways of working. 
 
-Title - **Comapany** <span style="float: right; ">Duration</span>  
-_Description Phasellus a tellus volutpat, ornare sapien et, lacinia erat. Suspendisse congue, enim vitae mattis pulvinar, eros lacus porttitor neque, eu sodales nibh metus nec arcu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;_  
-Technologies used  
+Summer Vacationer - **Telstra** <span style="float: right; ">Nov 2018 - Feb 2019</span>  
+Networks and IT | Unified Communications Business Improvement Team
+Used Excel and Tableau to visualise and organise data. This resulted in reduced traffic received ny call centers.
 
 ### SKILLS
-``` Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed porttitor mi. In bibendum tortor nec massa finibus, id ultricies urna pulvinar. Sed congue blandit est non sagittis. In eget lobortis ipsum. Quisque id nisl nisl. Donec nec dapibus diam. Donec vel euismod nisi.  ```  
-
-### PROJECTS
-**Title** - Description - Place <span style="float: right; ">Time span</span>  
-Pellentesque euismod odio nec mollis rutrum. Nulla facilisi. In hac habitasse platea dictumst. Etiam facilisis velit velit, id dapibus lacus bibendum nec. Proin euismod tortor non nunc luctus, ut varius mauris tristique.  
-
-**Title** - Description - Place <span style="float: right; ">Time span</span>  
-Pellentesque euismod odio nec mollis rutrum. Nulla facilisi. In hac habitasse platea dictumst. Etiam facilisis velit velit, id dapibus lacus bibendum nec. Proin euismod tortor non nunc luctus, ut varius mauris tristique.  
-
-**Title** - Description - Place <span style="float: right; ">Time span</span>  
-Pellentesque euismod odio nec mollis rutrum. Nulla facilisi. In hac habitasse platea dictumst. Etiam facilisis velit velit, id dapibus lacus bibendum nec. Proin euismod tortor non nunc luctus, ut varius mauris tristique.  
-
+ - Python
+ - Java
+ - Leadership
+ - Team work
+ - C
+ - REST API
+ - SQL
 
 
 ### RECOGNITION & INTERESTS
 
-- Etiam luctus ante quis est dictum faucibus.
-- Etiam luctus ante quis est dictum faucibus.
-- Etiam luctus ante quis est dictum faucibus.
-- Etiam luctus ante quis est dictum faucibus.
-- Etiam luctus ante quis est dictum faucibus.
-- Etiam luctus ante quis est dictum faucibus.
+- Monash Women In Engineering Scholarship
+- Telstra Engineering Leadership Scholarship
