@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Pudhina
 A simple, minimal [Jekyll](jekyllrb.com) theme for a personal web page and blog, focusing on white space and readability
 
@@ -35,3 +36,9 @@ Inspired by the theme [Daktilo](https://github.com/kronik3r/daktilo)
 
 ## License
 The theme is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
+=======
+
+# katherinemof.github.io
+My portfolio website!
+>>>>>>> gh-pages
+>>>>>>> ac08754756d1818b16d2453cf32ef113ce020178
