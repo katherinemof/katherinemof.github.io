@@ -1,12 +1,12 @@
 # Site settings
 title: Katherine
 description: >
-  A simple, minimal Jekyll theme for a personal web page and blog, focusing on white space and readability
+  Katherine Moffat's Personal Website
 
 baseurl: "/" # the subpath of your site, e.g. /blog/
 url: "https://katherinemof.github.io" # the base hostname & protocol for your site
 
-host: localhost
+host: localhost4000:
 
 author:
   fullname: Katherine
