@@ -45,7 +45,7 @@ This is what we are doing in this session
 
 # **Let's get started! :)**
 
-# Getting songs using GET request
+## Getting songs using GET request
 
 ### Need to import some python libraries!
 
@@ -131,13 +131,6 @@ for i,j in enumerate(json_response['tracks']):
 
 [https://developer.spotify.com/documentation/web-api/reference/browse/get-recommendations/](https://developer.spotify.com/documentation/web-api/reference/browse/get-recommendations/)
 
-### Thanks for coming!
-
-`Please leave us some feedback and comments on how you thought the session went!`
-
-These sessions are to genuinely help and encourage learning so we want to hear your feedback so we can improve and make them the best we can!
-
-[https://cutt.ly/mac-collab-feedback](https://cutt.ly/mac-collab-feedback)
 
 ## Query genres
 
@@ -151,6 +144,135 @@ response_genres =requests.get("https://api.spotify.com/v1/recommendations/availa
                         "Authorization":f"Bearer {access_token}"})
 print(response_genres.json())
 ```
+
+### Create the playlist
+
+We will first create an empty playlist in our Spotify account
+
+**User ID**
+
+```python
+user_id = "" # YOUR USERID or user URI in a string
+```
+
+This is your Spotify user login username.
+
+Alternatively, grab your user URI by going to your profile, clicking on the three dots, then share, then 'Copy user URI'.
+
+**Endpoint URL** 
+
+Our base URL to generate new playlists is:
+
+```python
+endpoint_url = f"https://api.spotify.com/v1/users/{user_id}/playlists"
+```
+
+You can overwrite the previous endpoint URL, or you can make a new one for clarity. BUT make sure you use the right variable name later on!
+
+**Generate your playlist**
+
+The request to generate your playlist is as follows:
+
+```python
+request_body = json.dumps({
+          "name": "NAME OF YOUR PLAYLIST",
+          "description": "DESCRIPTION OF YOUR PLAYLIST",
+          "public": False # let's keep it between us - for now
+        })
+```
+
+Send the **HTTP POST** request as follows:
+
+```python
+response = requests.post(url = endpoint_url, data = request_body, headers={"Content-Type":"application/json", "Authorization":"Bearer " + access_token})
+print(response.status_code)
+```
+
+Print your response to check the response code. 
+
+Remember:
+
+**201 = OK**
+
+**400 = bad request (maybe a syntax issue?)**
+
+**403 = forbidden (maybe a token issue)**
+
+You can also refresh your Spotify and check whether your playlist appears in your list of playlist 🙂
+
+### Add songs to the playlist
+
+Let's fill our playlist up with the recommended songs we retrieved in the previous session!
+
+**Playlist ID**
+
+From the response of the HTTP POST request to generate the playlist, get the 'ID' of the newly created playlist.
+
+**Note:** The response is an object in the following format:
+
+```python
+{
+	'attribute': 'value'
+	...
+	'id' : 'playlist_id'
+}
+```
+
+To check what other information ('attributes') came back from the request, you can use the **dir(object)** inbuilt function in Python.
+
+To access your playlist ID, access the 'id' attribute in the object as follows:
+
+```python
+playlist_id = response.json()['id']
+```
+
+**Endpoint URL** 
+
+Our base URL to fill a playlists is:
+
+```python
+endpoint_url = f"https://api.spotify.com/v1/playlists/{playlist_id}/tracks"
+```
+
+Again, you can overwrite the previous endpoint URL, or you can make a new one for clarity. BUT make sure you use the right variable name later on!
+
+**Playlist ID**
+
+From the response of the HTTP POST request to generate the playlist, get the 'ID' of the newly created playlist.
+
+**Note:** The response is an object in the following format:
+
+```python
+{
+	'attribute': 'value'
+	...
+	'id' : 'playlist_id'
+}
+```
+
+To check what other information ('attributes') came back from the request, you can use the **dir(object)** inbuilt function in Python.
+
+To access your playlist ID, access the 'id' attribute in the object as follows:
+
+```python
+playlist_id = response.json()['id']
+```
+
+**Send the HTTP POST request**
+
+Remember from the last session how we stored the all the URI's of the songs that came back from the server in a list called 'uris'?
+
+We will now send this list to the server, and 'ask' it to put all those songs into our new playlist, using another HTTP POST request as follows:
+
+```python
+request_body = json.dumps({
+          "uris" : uris
+        })
+response = requests.post(url = endpoint_url, data = request_body, headers={"Content-Type":"application/json", "Authorization":f"Bearer {access_token}"})
+print(response.status_code)
+```
+
+Now your playlist is filled with songs 😆
 
 ## ADDITIONAL RESOURCES
 
